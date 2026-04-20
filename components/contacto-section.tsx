@@ -49,11 +49,11 @@ export function ContactoSection() {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
           <Card className="border-verde-profundo/10">
-            <CardContent className="p-5">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="space-y-1.5">
-                    <Label htmlFor="nombre" className="text-verde-profundo text-sm">
+            <CardContent className="p-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="nombre" className="text-verde-profundo">
                       Nombre
                     </Label>
                     <Input
@@ -64,8 +64,8 @@ export function ContactoSection() {
                       className="border-verde-profundo/20 focus:border-dorado"
                     />
                   </div>
-                  <div className="space-y-1.5">
-                    <Label htmlFor="email" className="text-verde-profundo text-sm">
+                  <div className="space-y-2">
+                    <Label htmlFor="email" className="text-verde-profundo">
                       Email
                     </Label>
                     <Input
@@ -79,8 +79,8 @@ export function ContactoSection() {
                   </div>
                 </div>
 
-                <div className="space-y-1.5">
-                  <Label className="text-verde-profundo text-sm">Tipo de cliente</Label>
+                <div className="space-y-2">
+                  <Label className="text-verde-profundo">Tipo de cliente</Label>
                   <RadioGroup
                     value={tipoCliente}
                     onValueChange={setTipoCliente}
@@ -101,8 +101,8 @@ export function ContactoSection() {
                   </RadioGroup>
                 </div>
 
-                <div className="space-y-1.5">
-                  <Label htmlFor="asunto" className="text-verde-profundo text-sm">
+                <div className="space-y-2">
+                  <Label htmlFor="asunto" className="text-verde-profundo">
                     Asunto
                   </Label>
                   <Input
@@ -114,15 +114,15 @@ export function ContactoSection() {
                   />
                 </div>
 
-                <div className="space-y-1.5">
-                  <Label htmlFor="mensaje" className="text-verde-profundo text-sm">
+                <div className="space-y-2">
+                  <Label htmlFor="mensaje" className="text-verde-profundo">
                     Mensaje
                   </Label>
                   <Textarea
                     id="mensaje"
                     name="mensaje"
                     placeholder="Cuéntanos más..."
-                    rows={3}
+                    rows={5}
                     required
                     className="border-verde-profundo/20 focus:border-dorado resize-none"
                   />
